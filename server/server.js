@@ -1,6 +1,3 @@
-// IMPORTANT: this must be the very first import. ES module imports are hoisted and
-// evaluated in order, so loading .env here guarantees every other module (Gemini
-// client, JWT helpers, DB config...) can see process.env when it is evaluated.
 import "dotenv/config";
 
 import app from "./src/app.js";
